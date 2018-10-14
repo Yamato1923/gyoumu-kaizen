@@ -1,0 +1,58 @@
+ul{
+	width: 500px;
+	height: 2000px;
+	margin: 100px auto;
+	padding: 0px;
+}
+
+ul li{
+	list-style: none;
+	margin-top: 10px;
+}
+
+ul li label{
+	margin-right: 10px;
+	width: 130px;
+	float: left;
+}
+
+ul li .productAll{
+	margin-bottom: 40px;
+}
+
+ul li .productAll .product-container{
+	margin-top: 5px;
+}
+
+ul li .btn-confirm{
+	display: block;
+	margin: 0 auto;
+}
+
+.form-control{
+	width: 150px;
+	height: 20px;
+}
+.form-control-address{
+	width: 300px;
+	height: 20px;
+}
+
+.form-control-serial{
+	width: 70px;
+}
+
+
+/*.test-control{
+	width: 600px;
+	height: 20px;
+}*/
+
+
+
+
+
+
+
+
+

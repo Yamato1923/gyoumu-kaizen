@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>業務改善ツール</title>
+	<link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<form>
+
+		<ul class="form-container">
+			<li>
+				<label for="company">会社名</label>
+				<input type="text" name="company" id="company" class="form-control" placeholder="会社名">
+			</li>
+
+			<li>
+				<label for="address">住所</label>
+				<input type="text" name="address" id="address" class="form-control-address" placeholder="住所">
+			</li>
+
+			<li>
+				<label for="staff">担当者名</label>
+				<input type="text" name="staff" id="staff" class="form-control" placeholder="担当者名">
+			</li>
+
+			<li>
+				<label for="telephone">電話番号</label>
+				<input type="text" name="telephone" id="telephone" class="form-control" placeholder="電話番号">
+			</li>
+
+			<li>
+				<label for="email">メールアドレス</label>
+				<input type="email" name="email" id="email" class="form-control" placeholder="メールアドレス">
+			</li>
+
+			<br/>
+
+			<li>
+				<div class="productAll">
+					<label for="product">商品</label><br/>
+
+					<div class="product-container">
+						<label for="date">購入年/月
+							<div class="test-control">
+							<select name="date" id="id_year">
+							</select>
+							<select name="date" id="id_month">
+							</select>
+							<!-- <select name="date" id="id_day">
+							</select> -->
+							
+<script>
+(function() {
+  'use strict';
+
+  /*
+    今日の日付データを変数todayに格納
+   */
+  var optionLoop, this_day, this_month, this_year, today;
+  today = new Date();
+  this_year = today.getFullYear();
+  this_month = today.getMonth() + 1;
+  this_day = today.getDate();
+
+  /*
+    ループ処理（スタート数字、終了数字、表示id名、デフォルト数字）
+   */
+  optionLoop = function(start, end, id, this_day) {
+    var i, opt;
+
+    opt = null;
+    for (i = start; i <= end ; i++) {
+      if (i === this_day) {
+        opt += "<option value='" + i + "' selected>" + i + "</option>";
+      } else {
+        opt += "<option value='" + i + "'>" + i + "</option>";
+      }
+    }
+    return document.getElementById(id).innerHTML = opt;
+  };
+
+
+  /*
+    関数設定（スタート数字[必須]、終了数字[必須]、表示id名[省略可能]、デフォルト数字[省略可能]）
+   */
+  optionLoop(2016, this_year, 'id_year', this_year);
+  optionLoop(1, 12, 'id_month', this_month);
+  optionLoop(1, 31, 'id_day', this_day);
+})();
+
+</script>
+</div>
+
+						</label>
+					</div>
+
+					<br><br>
+
+					<div class="product-container">
+						<label for="product">型番
+							<select name="product" id="product">
+								<option value="none">未選択</option>
+								<option value="one">型番１</option>
+								<option value="two">型番２</option>
+								<option value="three">型番３</option>
+							</select>
+						</label>
+						<label for="product">Serial
+							<input type="text" name="staff" id="staff" class="form-control-serial" placeholder="Serial">
+						</label>
+					</div>
+
+					<br>
+
+					<div class="product-container">
+						<label for="product">型番
+							<select name="kataban" id="product">
+								<option value="none">未選択</option>
+								<option value="one">型番１</option>
+								<option value="two">型番２</option>
+								<option value="three">型番３</option>
+							</select>
+						</label>
+						<label for="product">Serial
+							<input type="text" name="staff" id="staff" class="form-control-serial" placeholder="Serial">
+						</label>
+					</div>
+
+					<br>
+
+					<div class="product-container">
+						<label for="product">型番
+							<select name="kataban" id="product">
+								<option value="none">未選択</option>
+								<option value="one">型番１</option>
+								<option value="two">型番２</option>
+								<option value="three">型番３</option>
+							</select>
+						</label>
+						<label for="product">Serial
+							<input type="text" name="staff" id="staff" class="form-control-serial" placeholder="Serial">
+						</label>
+					</div>
+
+				</div>
+			</li>
+
+			<br/>
+
+			<li>
+				<input type="submit" class="btn-confirm" value="登録">
+			</li>
+		</ul>
+
+	</form>
+</body>
+
+</html>
